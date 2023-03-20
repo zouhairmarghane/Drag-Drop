@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 420px;
+  justify-content: center;
+}
+
+.bx {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  border-radius: 12px;
+  border: 2px solid #0f2;
+}
+
+.bx .img {
+  height: 100%;
+  width: 100%;
+  background-image: url("test.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.bx.active {
+  border: 2px dashed #0f2;
+}
